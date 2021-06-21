@@ -5,7 +5,7 @@ venv.nosync/bin/activate: requirements.txt
 	. venv.nosync/bin/activate; pip3 install --upgrade pip; pip3 install -r requirements.txt
 
 	#set up R kernel for jupyterlab
-	R -e "if(!require(devtools)) install.packages('devtools', repos = 'http://cran.us.r-project.org'); devtools::install_github('IRkernel/IRkernel'); IRkernel::installspec()"
+	#R -e "if(!require(devtools)) install.packages('devtools', repos = 'http://cran.us.r-project.org'); devtools::install_github('IRkernel/IRkernel'); IRkernel::installspec()"
 
 	#set up BiocManager and install ChIPpeakAnno library
 	#R-e "if (!requireNamespace('BiocManager', quietly = TRUE)) install.packages('BiocManager'); BiocManager::install('ChIPpeakAnno')"
